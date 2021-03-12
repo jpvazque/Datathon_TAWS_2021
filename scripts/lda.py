@@ -21,6 +21,7 @@ import pyLDAvis.gensim
 import pickle 
 import pyLDAvis# Visualize the topics
 import spacy
+
 nltk.download('stopwords')
 spacy.cli.download("en_core_web_sm")
 PATH = '../../files/'
