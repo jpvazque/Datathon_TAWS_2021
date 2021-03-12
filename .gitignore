@@ -131,8 +131,3 @@ dmypy.json
 # datasets
 *.csv
 
-# notebooks
-*.ipynb
-
-# specific folders
-notebooks/
