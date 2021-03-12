@@ -4,8 +4,16 @@
 
 ## Instalación de dependencias
 
-Asegúrate de estar dentro de la carpeta del repositorio *DATATHON_TAWS_2021*, luego ejecuta el siguiente comando en la terminal:
+Asegurese de estar dentro de la carpeta del repositorio *DATATHON_TAWS_2021*, luego ejecute el siguiente comando en la terminal:
 
 `pip install -r requirements.txt`
 
 ## Modo de uso
+
+`cd scripts`
+
+`python ./predict.py path/to/usuarios.csv path/to/reseñas.csv`
+
+
+Asegurese de que los rutas se ingresen en ese orden
+
