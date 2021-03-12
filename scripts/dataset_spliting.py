@@ -76,15 +76,15 @@ def get_dataframes_by_categories(dic_category,filename):
     groups=get_dataframe_with_category(dic_category,filename).groupby("super_category",as_index=False)
     name_groups=groups.groups.keys()
     df_dict={}
-    if not(os.path.isdir("../files/datasets/")):
-        os.makedirs('../files/datasets', exist_ok=True)
+    if not(os.path.isdir("../datasets/")):
+        os.makedirs('../datasets', exist_ok=True)
 
     for i in name_groups:
         df_dict[i]=groups.get_group(i).reset_index(drop=True)
         df_dict[i].drop(["super_category"],axis=1,inplace=True)
     del groups
     for clave,valor in df_dict.items():
-        valor.to_csv(f"../files/datasets/csv_{clave}.csv")
+        valor.to_csv(f"../datasets/csv_{clave}.csv")
     return 0
 
 
