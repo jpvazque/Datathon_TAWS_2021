@@ -20,8 +20,8 @@ import tqdm
 import pyLDAvis.gensim
 import pickle 
 import pyLDAvis# Visualize the topics
-
-import spacy 
+import spacy
+nltk.download('stopwords')
 spacy.cli.download("en_core_web_sm")
 PATH = '../../files/'
 df_resena = pd.read_csv(
