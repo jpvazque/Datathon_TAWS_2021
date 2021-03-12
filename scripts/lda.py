@@ -47,7 +47,7 @@ wordcloud = WordCloud(
                 contour_color='steelblue',
                 stopwords=stop_words
 )
-wordcloud.generate(long_string[:int(size/4)])
+wordcloud.generate(long_string)
 
 
 
