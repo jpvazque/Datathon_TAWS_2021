@@ -12,7 +12,7 @@ Asegurese de estar dentro de la carpeta del repositorio *DATATHON_TAWS_2021*, lu
 
 `cd scripts`
 
-`python ./predict.py path/to/usuarios.csv path/to/reseñas.csv`
+`python ./predict.py path/to/usuarios.csv`
 
 
 Asegurese de que los rutas se ingresen en ese orden
